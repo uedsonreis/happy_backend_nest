@@ -21,7 +21,7 @@ function render(orphanage: Orphanage): void {
     orphanage.photos = (orphanage.photos)
         ? orphanage.photos.map(photo => ({
             ...photo,
-            path: (photo.path.startsWith('http')) ? photo.path : `http://localhost:3000/uploads/${photo.path}`
+            path: (photo.path.startsWith('http')) ? photo.path : `http://localhost:3333/uploads/${photo.path}`
         }))
         : undefined;
 }
